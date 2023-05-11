@@ -36,3 +36,4 @@ function handleJump(e) {
 
   timeSinceLastJump = 0
 }
+

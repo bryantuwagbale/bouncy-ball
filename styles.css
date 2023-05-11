@@ -1,12 +1,16 @@
+/* Set the box-sizing property for all elements */
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
+/* Reset the margin and hide the overflow on the body */
 body {
   margin: 0;
   overflow: hidden;
+  background-image: linear-gradient(to bottom, #87CEEB, #1E90FF);
 }
 
+/* Style the title element */
 .title {
   z-index: 10;
   position: absolute;
@@ -18,19 +22,22 @@ body {
   flex-direction: column;
 }
 
+/* Style the subtitle element */
 .subtitle {
   margin-top: .5rem;
 }
 
+/* Hide the hide class */
 .hide {
   display: none;
 }
 
+/* Style the bird element */
 .bird {
-  --bird-top: -1000;
-  --bird-size: 60px;
+  --bird-top: -1000; /* Set the initial top position to -1000px */
+  --bird-size: 60px; /* Set the bird size */
   position: absolute;
-  background-color: hsl(50, 75%, 50%);
+  background-color: hsl(50, 75%, 50%); /* Set the bird's background color */
   width: var(--bird-size);
   height: var(--bird-size);
   left: var(--bird-size);
@@ -38,26 +45,31 @@ body {
   border-radius: 50%;
 }
 
+/* Style the pipe element */
 .pipe {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: calc(var(--pipe-width) * 1px);
-  left: calc(var(--pipe-left) * 1px);
+  width: calc(var(--pipe-width) * 1px); /* Set the pipe width */
+  left: calc(var(--pipe-left) * 1px); /* Set the pipe position from the left */
 }
 
+/* Style the segment element inside the pipe */
 .pipe > .segment {
   position: absolute;
   width: 100%;
-  background-color: hsl(100, 75%, 50%);
+  background-color: hsl(100, 75%, 50%); /* Set the segment's background color */
 }
 
+/* Style the top segment inside the pipe */
 .pipe > .top {
   top: 0;
-  bottom: calc(var(--hole-top) * 1px);
+  bottom: calc(var(--hole-top) * 1px); /* Set the height of the top segment */
 }
 
+/* Style the bottom segment inside the pipe */
 .pipe > .bottom {
   bottom: 0;
-  top: calc(100vh - (var(--hole-top) * 1px) + calc(var(--hole-height) * 1px));
+  top: calc(100vh - (var(--hole-top) * 1px) + calc(var(--hole-height) * 1px)); /* Set the height of the bottom segment */
 }
+
