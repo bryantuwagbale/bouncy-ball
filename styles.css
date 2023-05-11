@@ -73,3 +73,10 @@ body {
   top: calc(100vh - (var(--hole-top) * 1px) + calc(var(--hole-height) * 1px)); /* Set the height of the bottom segment */
 }
 
+/* Adjust pipe position and width on mobile */
+@media only screen and (max-width: 600px) {
+  .pipe {
+    width: calc(var(--pipe-width) * 0.5px);
+    left: calc(var(--pipe-left) * 0.5px);
+  }
+}
