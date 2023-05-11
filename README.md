@@ -1,6 +1,6 @@
 # Bouncy Ball
 
-Bouncy Ball is a browser-based Flappy Bird clone game where you tap the spacebar to move the bird.
+Bouncy Ball is a browser-based Flappy Bird clone game where you tap the spacebar to move the ball.
 
 ## Landing Page
 
@@ -9,6 +9,11 @@ Bouncy Ball is a browser-based Flappy Bird clone game where you tap the spacebar
 ## Play Online
 
 You can play the game online **[here.](https://bryantuwagbale.github.io/bouncy-ball/)**
+
+## Tools
+
+This was built using HTML, CSS, and JavaScript.
+
 
 ## Contributing
 
